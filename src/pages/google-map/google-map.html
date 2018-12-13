@@ -1,0 +1,30 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>מפות</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="polygonPaint()">צייר פוליגונים</button>
+  <button ion-button (click)="clear()">נקה</button>
+  <button ion-button (click)="reload()">טען</button>
+  <button ion-button (click)="delete()">מחק</button>
+  
+  <agm-map [latitude]="lat" (mapClick)="OnChooseLocation($event)" [longitude]="lng">
+    <agm-marker *ngFor="let marker of agmMarkers" [latitude]="marker.lat" [longitude]="marker.lng">
+    </agm-marker>
+    <agm-polyline>
+      <agm-polyline-point 
+      *ngFor="let point of points"
+      [latitude]="point.lat" [longitude]="point.lng">
+      </agm-polyline-point>
+    </agm-polyline>
+
+  </agm-map>
+</ion-content>

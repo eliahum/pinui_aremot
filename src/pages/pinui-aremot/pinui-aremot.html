@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>פינוי ערימות</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+סתם בדיקה שלי
+
+<button ion-button (click)="reset()">איפוס נתונים</button>
+<ion-grid *ngIf="pinuiVisible" dir="rtl">
+    <ion-row>
+        <ion-col col-2><b>תיאום</b></ion-col>
+        <ion-col col-4><b>כתובת</b></ion-col>
+        <ion-col col-2><b>סוג</b></ion-col>
+        <ion-col col-2><b>בוצע</b></ion-col>
+
+      </ion-row>
+  <ion-row *ngFor="let pinui of pinuiim" >
+      <ion-col col-2> {{pinui.id}}</ion-col>
+
+    <ion-col col-4> {{pinui.ktovet}}</ion-col>
+      <ion-col col-2> {{pinui.sug}}</ion-col>
+      <ion-col col-2>
+        <ion-checkbox color="green"
+        [(ngModel)]="pinui.is_buza"
+        checked="pinui.is_buza" (ionChange)="updatePinui(pinui)"></ion-checkbox>
+      </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+
+
+</ion-content>
