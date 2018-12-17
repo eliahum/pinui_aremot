@@ -3,7 +3,7 @@
     "getPinuiAremot": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinui/GetPinuiAremot",
     "resetIonicPinui": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinuii/ResetIonicPinui",
     "updateIonicPinui": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinui/UpdateIonicPinui",
-    "addMarker": "http://ppr-integ011/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/AddMarker",
+    "addMarker": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/AddMarker",
     "deleteMarkers": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/DeleteMarkers",
     "getMarkers": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/GetMarkers"
     
