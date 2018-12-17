@@ -1,10 +1,10 @@
 {
     "production": true,   
-    "getPinuiAremot": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Pinui/GetPinuiAremot",
-    "resetIonicPinui": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Pinui/ResetIonicPinui",
-    "updateIonicPinui": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Pinui/UpdateIonicPinui",
-    "addMarker": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Marker/AddMarker",
-    "deleteMarkers": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Marker/DeleteMarkers",
-    "getMarkers": "http://localhost/Tlv.IonicPinuiAremot.Api/api/Marker/GetMarkers"
+    "getPinuiAremot": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinui/GetPinuiAremot",
+    "resetIonicPinui": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinuii/ResetIonicPinui",
+    "updateIonicPinui": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Pinui/UpdateIonicPinui",
+    "addMarker": "http://ppr-integ011/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/AddMarker",
+    "deleteMarkers": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/DeleteMarkers",
+    "getMarkers": "http://ppr-integ01/tlvoephandler/tlvoephandler.svc/rest/IonicPinuiAremot/Marker/GetMarkers"
     
 }
